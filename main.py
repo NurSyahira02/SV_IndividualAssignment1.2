@@ -14,7 +14,6 @@ st.header("Objective 3: Gender Disaggregated Demographic Marriage Dynamics 💍"
 try:
     df_marriages = pd.read_csv('marriages_state_CLEANED.csv')
     st.success("Data loaded successfully!")
-    st.success("Data loaded successfully!")
     df_marriages['date'] = pd.to_datetime(df_marriages['date'])
     df_marriages['year'] = df_marriages['date'].dt.year
 
