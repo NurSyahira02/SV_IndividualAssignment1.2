@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.header("Objective 3: Gender Disaggregated Demographic Marriage Dynamics 💍", divider="gray")
+st.header("Gender Disaggregated Demographic Marriage Dynamics 💍", divider="gray")
 
 # Load Dataset
 try:
