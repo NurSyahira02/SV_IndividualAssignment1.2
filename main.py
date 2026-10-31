@@ -35,11 +35,11 @@ try:
 
     # 4 Metric Summary Boxes
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Female Marriage Rate (2024)", f"{female_rate_2024:.1f}", help="Female crude marriage rate per 1,000 population", border=True)
-    col2.metric("Male Marriage Rate (2024)", f"{male_rate_2024:.1f}", help="Male crude marriage rate per 1,000 population", border=True)
-    col3.metric("Gender Rate Gap (2024)", f"{gender_gap:.1f}", help="Absolute difference between female and male marriage rates", border=True)
-    col4.metric("Total Marriages (2024)", f"{total_abs_2024:,}", help="Total absolute marriages recorded in 2024", border=True)
-
+    col1.metric("Female Rate", f"{female_rate_2024:.1f}", help="Latest female crude marriage rate per 1,000 population across the 2019–2024 evaluation period", border=True)
+    col2.metric("Male Rate", f"{male_rate_2024:.1f}", help="Latest male crude marriage rate per 1,000 population across the 2019–2024 evaluation period", border=True)
+    col3.metric("Gender Rate Gap", f"{gender_gap:.1f}", help="Absolute difference between female and male marriage rates across the 2019–2024 window", border=True)
+    col4.metric("Total Marriages", f"{total_abs_2024:,}", help="Total annual marriages recorded in the latest period (2019–2024 series)", border=True)
+    
     # Raw Data Preview
     st.subheader("Raw Data Preview")
     st.dataframe(state_marr[['state', 'year', 'sex', 'rate', 'abs']])
